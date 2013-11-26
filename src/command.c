@@ -137,9 +137,9 @@ char *cmd_generate_local_ip() {
   nodeid_t id = co_id_get();
 
   /* Generate local ip */
-  co_generate_ip ("169.254.0.0", "255.255.0.0", id, address, 0)   
+  co_generate_ip ("169.254.0.0", "255.255.0.0", id, address, 0);   
     
-  DEBUG("Local address for this node: %s", address)
+  DEBUG("Local address for this node: %s", address);
   
 // NOTE: whoever calls this function must then free the heap space for "address"
 return address; 
